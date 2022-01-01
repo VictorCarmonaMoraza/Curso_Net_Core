@@ -6,7 +6,12 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int year = 2022;
+
+            Console.WriteLine("Hello Victor! " + year);
+
+            //Para que no se oculta la consola
+            Console.ReadLine();
         }
     }
 }
