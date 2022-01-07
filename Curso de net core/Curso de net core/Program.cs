@@ -6,26 +6,24 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            int valor1 = 3;
-            int valor2 = 6;
-            var suma = valor1 + valor2;
-            Console.WriteLine("la suma es: "+$"{suma}");
-            Console.WriteLine("la suma es: {0} ", suma);
+            //Operadores de asignacion
+            int valor1 = 9;
+            int valor2 = 2;
+            int valor3 = 6;
+            int valor4 = 3;
+            int valor5 = 9;
+            int valor6 = 3;
+            //Le sumamos al valor1 el valor2
+            valor1 += valor2;
+            valor3 -= valor4;
+            Console.WriteLine("Resultado {0} ", valor1);
+            Console.WriteLine("Resultado {0} ", valor3);
+            //Console.WriteLine("Resultado " + $"{division}");
             Console.WriteLine("");
 
-            var resta = valor1 - valor2;
-            Console.WriteLine("la resta es: " + $"{resta}");
-            Console.WriteLine("la resta es: {0} ", resta);
-            Console.WriteLine("");
-
-            var multiplicacion = valor1 * valor2;
-            Console.WriteLine("la multiplicacion es: " + $"{multiplicacion}");
-            Console.WriteLine("la multiplicacion es: {0} ", multiplicacion);
-            Console.WriteLine("");
-
-            var division = valor1 / valor2;
-            Console.WriteLine("la division es: " + $"{division}");
-            Console.WriteLine("la division es: {0} ", division);
+            //Obtenemos el resto de una division
+            valor6 %= valor5;
+            Console.WriteLine("Resultado {0} ", valor6);
             Console.WriteLine("");
 
             //Para que no se oculta la consola
