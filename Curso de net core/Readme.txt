@@ -1,3 +1,16 @@
-## 11 - Estructura else que acompaña a la estructura if
+## 12 - Estructura condicionales anidadas
 
-En este archivo explicamos como agregar el else acompañando al if y la importancia que tiene.
+-Se trata de hacer condiciones dentro de otras condiciones.
+
+ if (valor1!=valor2 || valor3== valor4)
+            {
+                if (valor3 == valor4)
+                {
+                    Console.WriteLine("Resultado {0} ", "La comparacion devolvio un true");
+                }
+                else
+                {
+                    Console.WriteLine("Resultado {0} ", "La comparacion devolvio un false");
+                }
+                
+            }

@@ -15,7 +15,15 @@ namespace Curso_de_net_core
 
             if (valor1!=valor2 || valor3== valor4)
             {
-                Console.WriteLine("Resultado {0} ", data);
+                if (valor3 == valor4)
+                {
+                    Console.WriteLine("Resultado {0} ", "La comparacion devolvio un true");
+                }
+                else
+                {
+                    Console.WriteLine("Resultado {0} ", "La comparacion devolvio un false");
+                }
+                
             }
             else
             {
@@ -23,7 +31,6 @@ namespace Curso_de_net_core
             }
 
             //Para que no se oculta la consola
-
             //Console.ReadLine();
             Console.ReadKey();
 
