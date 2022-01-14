@@ -11,24 +11,19 @@ namespace Curso_de_net_core
             int valor2 = 98;
             double valor3 = 10;
             double valor4 = 11;
+            string name;
             var data = valor1 != valor2;
 
-            if (valor1!=valor2 || valor3== valor4)
-            {
-                if (valor3 == valor4)
-                {
-                    Console.WriteLine("Resultado {0} ", "La comparacion devolvio un true");
-                }
-                else
-                {
-                    Console.WriteLine("Resultado {0} ", "La comparacion devolvio un false");
-                }
-                
-            }
-            else
-            {
-                Console.WriteLine("Resultado {0} ", data);
-            }
+            //if (data)
+            //{
+            //    name = "Alex";
+            //}
+            //else
+            //{
+            //    name = "Joel";
+            //}
+            name = data ? "Alex" : "Joel";
+            Console.WriteLine("Resultado {0} ", name);
 
             //Para que no se oculta la consola
             //Console.ReadLine();

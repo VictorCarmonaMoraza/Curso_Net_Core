@@ -1,16 +1,17 @@
-## 12 - Estructura condicionales anidadas
+## 13 - El operador condicional
 
--Se trata de hacer condiciones dentro de otras condiciones.
+Aqui vamos a sustituir la estructura condicional if else por otra mas corta
 
- if (valor1!=valor2 || valor3== valor4)
-            {
-                if (valor3 == valor4)
-                {
-                    Console.WriteLine("Resultado {0} ", "La comparacion devolvio un true");
-                }
-                else
-                {
-                    Console.WriteLine("Resultado {0} ", "La comparacion devolvio un false");
-                }
-                
-            }
+        var data = valor1 != valor2;
+            //if (data)
+            //{
+            //    name = "Alex";
+            //}
+            //else
+            //{
+            //    name = "Joel";
+            //}
+            //Si el valor de data es true, la variable name tomara el valor de "Alex" mientras
+            //en caso de que sea false tomara el valor de "Joel"
+            name = data ? "Alex" : "Joel";
+            Console.WriteLine("Resultado {0} ", name);
