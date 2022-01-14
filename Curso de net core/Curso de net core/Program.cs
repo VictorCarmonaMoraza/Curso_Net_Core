@@ -8,20 +8,24 @@ namespace Curso_de_net_core
         {
             //Operadores de igualdad
             int valor1 = 9;
-            int valor2 = 9;
+            int valor2 = 98;
+            double valor3 = 10;
+            double valor4 = 11;
             var data = valor1 != valor2;
 
-
-            if (data)
+            if (valor1!=valor2 || valor3== valor4)
             {
                 Console.WriteLine("Resultado {0} ", data);
             }
-            
-            //Console.WriteLine("Resultado " + $"{division}");
-            //Console.WriteLine("");
+            else
+            {
+                Console.WriteLine("Resultado {0} ", data);
+            }
 
             //Para que no se oculta la consola
-            Console.ReadLine();
+
+            //Console.ReadLine();
+            Console.ReadKey();
 
         }
     }
