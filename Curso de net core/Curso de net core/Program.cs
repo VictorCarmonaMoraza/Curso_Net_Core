@@ -6,33 +6,26 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            //creacion de un array de tipo string
-            string[] cadenas = new string[5];
-            cadenas[0] = "Alex";
-            cadenas[1] = "Carlos";
-            cadenas[2] = "Alejandro";
-            cadenas[3] = "Alba";
-            cadenas[4] = "Lucia";
+            //Creamos un array de tipo entero
+            int[] age= new int[5];
 
-            //Inicializacion de un array
-            string[] name = { "Alex","Carlos", "Alejandro", "Alba", "Lucia" };
+            //Almacenamos datos en las posiciones de un array de tipo entero
+            age[0] = 5;
+            age[1] = 15;
+            age[2] = 50;
+            age[3] = 55;
+            age[4] = 95;
 
-            //Imprimimos la longitud del array
-            Console.WriteLine("Resultado {0} ", cadenas.Length);
+            //Imprimimos una poscion del array
+            Console.WriteLine("Resultado {0}", age[0] + " - " + age[3] +" - " +age[2]);
 
-            //Imprimimos la posicion 4 del array que sera la ultima a la que podemos asignar valores
-            Console.WriteLine("Resultado {0} ", cadenas[4]);
-
-            //Concatenamos posiciones de array cadenas
-            Console.WriteLine("Resultado {0} ", cadenas[0] + " "+ cadenas[3]);
-
-            //Concatenamos posiciones de array name
-            Console.WriteLine("Resultado {0} ", name[0] + " " + name[3]);
+            //Inicializar un array con datos por defecto
+            int[] dia = { 4, 25, 35, 98, 31 };
+            Console.WriteLine("Resultado {0}", dia[0] + " - " + dia[1] + " - " + dia[3]);
 
             //Para que no se oculta la consola
             //Console.ReadLine();
             Console.ReadKey();
-
         }
     }
 }
