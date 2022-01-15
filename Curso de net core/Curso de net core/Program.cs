@@ -7,24 +7,15 @@ namespace Curso_de_net_core
         static void Main(string[] args)
         {
             //declaramos variable
-            var data = 5;
-
-            switch (data)
+            var data = 2;
+            var resultado = data switch
             {
-                case 5:
-                    Console.WriteLine("Este es el numero que viene en la data y es {0}", data);
-                    break;
-                case 4:
-                    Console.WriteLine("Este es el numero que viene en la data y es {0}", data);
-                    break;
+                1 => "Alex",
+                2 => "Victor",
+                3 => "Lucia"
+            };
 
-                default:
-                    Console.WriteLine("Este es el numero que viene en la data y es el numero {0}", data);
-                    break;
-            }
-
-
-
+            Console.WriteLine("Resultado {0}", resultado);
 
             //Para que no se oculta la consola
             //Console.ReadLine();

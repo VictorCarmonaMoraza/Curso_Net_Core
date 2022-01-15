@@ -1,18 +1,15 @@
-﻿## 20 - Instruccion de seleccion switch
+﻿## 21 - Switch 1
 
- //declaramos variable
-            var data =5;
-//Comprobamos si existe algun caso donde se cumple que data se corresponde con alguno de los casos
- switch (data)
+Esta es nueva forma de hacer un switch y no esta en toda las versiones, solo creo que esta en las ultimas 
+versiones de .net core
+
+//declaramos variable
+            var data = 2;
+            var resultado = data switch
             {
-                case 5:
-                    Console.WriteLine("Este es el numero que viene en la data y es 5");
-                    break;
-                case 4:
-                    Console.WriteLine("Este es el numero que viene en la data y es 4");
-                    break;
+                1 => "Alex",
+                2 => "Victor",
+                3 => "Lucia"
+            };
 
-                default:
-                    Console.WriteLine("No es ningun numero");
-                    break;
-            }
+            Console.WriteLine("Resultado {0}", resultado);
