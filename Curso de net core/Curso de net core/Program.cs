@@ -6,22 +6,14 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            //Creamos un array de tipo entero
-            int[] age= new int[5];
+            //Estamos creando un array multidimensional de 3 filas y 2 columnas
+            double[,] bidimensional = new double[3, 2] { { 6, 3.0 }, { 7, 5.1 }, { 8, 4.7 } };
+            //esrtamos creando un array tridimensioanl con 2 filas, 2 columnas y tres datos en cada columna
+            double[,,] tridmensional = new double[2, 2, 3] { { { 3.0, 6.9, 8.9 }, { 6.8, 4.5, 7.6 } }, { { 7.0, 5.9, 1.9 }, { 9.8, 15.5, 78.6 } } };
 
-            //Almacenamos datos en las posiciones de un array de tipo entero
-            age[0] = 5;
-            age[1] = 15;
-            age[2] = 50;
-            age[3] = 55;
-            age[4] = 95;
-
-            //Imprimimos una poscion del array
-            Console.WriteLine("Resultado {0}", age[0] + " - " + age[3] +" - " +age[2]);
-
-            //Inicializar un array con datos por defecto
-            int[] dia = { 4, 25, 35, 98, 31 };
-            Console.WriteLine("Resultado {0}", dia[0] + " - " + dia[1] + " - " + dia[3]);
+            //Imrprimimos la poscion que queremos
+            Console.WriteLine("Resultado {0}", bidimensional[1, 1]);
+            Console.WriteLine("Resultado {0}", tridmensional[1, 1, 1]);
 
             //Para que no se oculta la consola
             //Console.ReadLine();
