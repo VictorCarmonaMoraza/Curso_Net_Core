@@ -6,14 +6,17 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i++)
+            //Creamos una array de tipo string
+            string[] name = { "Alejandor", "Victor", "Carlos" };
+
+            for (int i = 0; i < name.Length; i++)
             {
-                Console.WriteLine("Resultado {0}", i); 
+                Console.WriteLine("Resultado {0}", name[i]);
             }
-            Console.WriteLine("-------------------------");
-            for (int i = 10; i > 0; i--)
+            Console.WriteLine("--------------------");
+            foreach (var item in name)
             {
-                Console.WriteLine("Resultado {0}", i);
+                Console.WriteLine("Resultado {0}", item);
             }
 
             //Para que no se oculta la consola

@@ -1,21 +1,20 @@
-﻿## 17 - Bucle ciclo For
+﻿## 18 La estructura bucle ciclo Foreach
 
+//Creamos una array de tipo string
+            string[] name = { "Alejandor", "Victor", "Carlos" };
 
-Estructura de un ciclo For
+//Recorremos el array anterior con un ciclo for y un ciclo foreach
 
- for (int i = 0; i < length; i++)
+-CICLO FOR
+for (int i = 0; i < name.Length; i++)
             {
-
+                Console.WriteLine("Resultado {0}", name[i]);
             }
 
-//Imprimos del 0 hasta el 9 mediante el ciclo For
-for (int i = 0; i < 10; i++)
-            {
-                Console.WriteLine("Resultado {0}", i); 
-            }
+            Console.WriteLine("--------------------");
 
-//Imprimimos del 10 hasta el 1 mediante el ciclo For
-for (int i = 10; i > 0; i--)
+-CICLO FOREACH
+foreach (var item in name)
             {
-                Console.WriteLine("Resultado {0}", i);
+                Console.WriteLine("Resultado {0}", item);
             }
