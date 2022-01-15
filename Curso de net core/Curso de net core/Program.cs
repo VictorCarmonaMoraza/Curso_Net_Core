@@ -6,20 +6,22 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            //Creamos una lista de objetos
-            var (a, b, opcion) = (2, 6, "+");
-            var resultado = opcion switch
+            //creamos una variable de tipo bool
+            var valor = true;
+            var count = 1;
+            while (valor)
             {
-                "+" => a + b,
-                "-" => a - b,
-                "*" => a * b
-            };
-
-            Console.WriteLine("Resultado {0}", resultado);
+                if (count == 6)
+                {
+                    valor = false;
+                }
+                count++;
+                Console.WriteLine("Resultado {0}", count);
+            }
 
             //Para que no se oculta la consola
             //Console.ReadLine();
-            Console.ReadKey();
+             Console.ReadKey();
         }
     }
 }

@@ -1,13 +1,29 @@
-﻿## 22 - Switch 2
+﻿## 23-La estructura While
 
-Esta declaracion de variable que acepta tres datos es nuevo en c#
-//Creamos una lista de objetos
-            var (a, b, opcion) = (2, 6, "+");
-            var resultado = opcion switch
+//creamos una variable de tipo bool
+            var valor = true;
+            var count = 1;
+//Est es un bucle infinito porque al ser siempre verdadero nunca para su ejecucion
+            while (valor)
             {
-                "+" => a + b,
-                "-" => a - b,
-                "*" => a * b
-            };
+                Console.WriteLine("Resultado {0}", count);
+            }
 
-            Console.WriteLine("Resultado {0}", resultado);
+
+//Ahora pararemos la ejecucion mediante una condicion y el incremento de una variable
+                
+//creamos una variable de tipo bool
+            var valor = true;
+            var count = 1;
+            while (valor)
+            {
+            //Cuando la variable couny sea igual a 6, la variable valor tomara el valor de false
+            //y se parara
+                if (count == 6)
+                {
+                    valor = false;
+                }
+                //incrementamos en una unidad la variable contador
+                count++;
+                Console.WriteLine("Resultado {0}", count);
+            }
