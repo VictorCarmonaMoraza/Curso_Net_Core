@@ -6,13 +6,13 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            //declaramos variable
-            var data = 2;
-            var resultado = data switch
+            //Creamos una lista de objetos
+            var (a, b, opcion) = (2, 6, "+");
+            var resultado = opcion switch
             {
-                1 => "Alex",
-                2 => "Victor",
-                3 => "Lucia"
+                "+" => a + b,
+                "-" => a - b,
+                "*" => a * b
             };
 
             Console.WriteLine("Resultado {0}", resultado);

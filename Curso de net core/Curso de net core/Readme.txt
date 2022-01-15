@@ -1,15 +1,13 @@
-﻿## 21 - Switch 1
+﻿## 22 - Switch 2
 
-Esta es nueva forma de hacer un switch y no esta en toda las versiones, solo creo que esta en las ultimas 
-versiones de .net core
-
-//declaramos variable
-            var data = 2;
-            var resultado = data switch
+Esta declaracion de variable que acepta tres datos es nuevo en c#
+//Creamos una lista de objetos
+            var (a, b, opcion) = (2, 6, "+");
+            var resultado = opcion switch
             {
-                1 => "Alex",
-                2 => "Victor",
-                3 => "Lucia"
+                "+" => a + b,
+                "-" => a - b,
+                "*" => a * b
             };
 
             Console.WriteLine("Resultado {0}", resultado);
