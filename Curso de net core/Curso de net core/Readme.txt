@@ -1,4 +1,4 @@
-﻿## 31 - Modificador private y metodos que no retorna elementos
+﻿## 32 - Modificador public y metodos que retorna un tipo de dato
 
 
 
