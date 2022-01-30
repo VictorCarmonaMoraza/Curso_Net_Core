@@ -7,19 +7,27 @@ namespace Curso_de_net_core
         static void Main(string[] args)
         {
             var curso = "Curso de C# desde cero";
+            //Nos devuelve la posicion del elemento
+            var data = curso.IndexOf("#");
+            Console.WriteLine(data);
 
-            Console.WriteLine("Cadena 1 {0} ", curso.Substring(9));
+            //Nos devuelve la poscion de la palabra
+            var data2 = curso.IndexOf("desde");
+            Console.WriteLine(data2);
 
-            Console.WriteLine("Cadena 2 {0} ", curso.Substring(9, 11));
+            //Convierte la cadena de etxto en un array de char
+            var data3 = curso.ToCharArray();
+            //Recorremos el array de char
+            for (int i = 0; i < data3.Length; i++)
+            {
+                Console.Write("{0},",data3[i]);
+            }
+            Console.WriteLine("");
 
-            var sub = curso.Replace("desde cero", "net core");
-            Console.WriteLine("Cadena 3 {0}", sub);
-
-            sub = curso.Remove(5);
-            Console.WriteLine("Cadena 4 {0}", sub);
-
-            sub = curso.Remove(5,11);
-            Console.WriteLine("Cadena 5 {0}", sub);
+            //Comparacion
+            var name = "Alex";
+            var data4 = curso.Equals(name);
+            Console.WriteLine(data4);
             
             Console.ReadLine();
             //Console.ReadKey();

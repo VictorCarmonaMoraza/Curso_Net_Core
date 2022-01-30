@@ -1,4 +1,4 @@
-﻿## 27 - Subcadenas de string
+﻿## 28- Iterando las cadena de texto
 
 
 
