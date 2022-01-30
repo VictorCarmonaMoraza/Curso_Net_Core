@@ -1,4 +1,4 @@
-﻿## 26 - Formato de cadenas
+﻿## 27 - Subcadenas de string
 
 
 

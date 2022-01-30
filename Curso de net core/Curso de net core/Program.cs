@@ -6,13 +6,21 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            var nombre = (nombre1: "Alex",age1: 24,nombre2:"Victor");
+            var curso = "Curso de C# desde cero";
 
-            //Interpolacion de cadenas de ipo string
-            Console.WriteLine($"{nombre.nombre1} age {nombre.age1}");
+            Console.WriteLine("Cadena 1 {0} ", curso.Substring(9));
 
-            //Formato compuesto
-            Console.WriteLine("Nombre {0} age {1}", nombre.nombre2, nombre.age1);
+            Console.WriteLine("Cadena 2 {0} ", curso.Substring(9, 11));
+
+            var sub = curso.Replace("desde cero", "net core");
+            Console.WriteLine("Cadena 3 {0}", sub);
+
+            sub = curso.Remove(5);
+            Console.WriteLine("Cadena 4 {0}", sub);
+
+            sub = curso.Remove(5,11);
+            Console.WriteLine("Cadena 5 {0}", sub);
+            
             Console.ReadLine();
             //Console.ReadKey();
         }
