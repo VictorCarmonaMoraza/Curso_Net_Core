@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Curso_de_net_core
 {
@@ -6,29 +7,31 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            var curso = "Curso de C# desde cero";
-            //Nos devuelve la posicion del elemento
-            var data = curso.IndexOf("#");
-            Console.WriteLine(data);
+            //Cambiar un caracter por otro en la cdena de texto
+            var names = new StringBuilder("Victor Carmona");
+            names[0] = 'R';
+            Console.WriteLine(names.ToString());
 
-            //Nos devuelve la poscion de la palabra
-            var data2 = curso.IndexOf("desde");
-            Console.WriteLine(data2);
+            //Agregar contenido a la cadena de texto
+            var names2 = new StringBuilder("Victor Carmona");
+            names2.Append("");
+            names2.Append("Moraza");
+            Console.WriteLine(names2.ToString());
 
-            //Convierte la cadena de etxto en un array de char
-            var data3 = curso.ToCharArray();
-            //Recorremos el array de char
-            for (int i = 0; i < data3.Length; i++)
-            {
-                Console.Write("{0},",data3[i]);
-            }
-            Console.WriteLine("");
+            //Obtener la longitud de la cadena de texto
+            Console.WriteLine(names2.Length);
 
-            //Comparacion
-            var name = "Alex";
-            var data4 = curso.Equals(name);
-            Console.WriteLine(data4);
-            
+            //Cambiar la capacidad de nustra cadena de texto
+            var names3 = new StringBuilder("Victor Carmona");
+            // names3.Capacity=2;  //Esto provocara una excepcion
+            names3.Capacity = 17;
+            Console.WriteLine(names3.ToString());
+
+
+
+
+
+
             Console.ReadLine();
             //Console.ReadKey();
         }
