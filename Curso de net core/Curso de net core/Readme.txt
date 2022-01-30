@@ -1,4 +1,4 @@
-﻿## 30- La clase StringBuimder #2
+﻿## 31 - Modificador private y metodos que no retorna elementos
 
 
 

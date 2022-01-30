@@ -7,19 +7,21 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-           
-
-            //Agregar contenido a la cadena de texto
-            var names2 = new StringBuilder("Victor Carmona");
-            //Metodo que ejecutara un salto de linea
-            names2.AppendLine(" ");
-            names2.Append("Moraza").Append(" ").Append("Diaz");
-            names2.AppendLine(" ");
-            names2.AppendFormat("Age {0}",50);
-            Console.WriteLine(names2.ToString());
-
+            var data = new Program(); //Tambien es valido--> Program data = new Program();
+            data.metodoPrivado();
+            metodoPrivado2();
             Console.ReadLine();
             //Console.ReadKey();
+        }
+
+        private  void metodoPrivado()
+        {
+            Console.WriteLine("Metodo privado con instancia");
+        }
+
+        private static void metodoPrivado2()
+        {
+            Console.WriteLine("Metodo privado son instanciar");
         }
     }
 }
