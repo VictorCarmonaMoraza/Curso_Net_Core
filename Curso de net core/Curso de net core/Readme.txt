@@ -1,4 +1,4 @@
-﻿## 29- La clase StringBuimder #1
+﻿## 30- La clase StringBuimder #2
 
 
 
