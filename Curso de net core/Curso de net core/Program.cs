@@ -6,16 +6,15 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            string name1 = "Ale";
-            string name2 = "Victor";
-            string name3 = name1;
+            var nombre = (nombre1: "Alex",age1: 24,nombre2:"Victor");
 
-            name1 += name2;
-            Console.WriteLine("Name: {0}", name1);
-            Console.WriteLine("Name: {0}", name3);
+            //Interpolacion de cadenas de ipo string
+            Console.WriteLine($"{nombre.nombre1} age {nombre.age1}");
 
+            //Formato compuesto
+            Console.WriteLine("Nombre {0} age {1}", nombre.nombre2, nombre.age1);
             Console.ReadLine();
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }

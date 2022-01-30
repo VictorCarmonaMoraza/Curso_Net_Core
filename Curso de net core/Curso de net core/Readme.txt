@@ -1,4 +1,4 @@
-﻿## 25 - Inmutabilidad de los objetos String
+﻿## 26 - Formato de cadenas
 
 
 
