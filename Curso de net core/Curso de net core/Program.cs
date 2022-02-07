@@ -5,43 +5,45 @@ namespace Curso_de_net_core
 {
     class Program
     {
+        //Variables Globales
+        private String cadena;
+        private String verMayusculas = "";
+        private String verMinusculas = "";
+        private int n;
+        private string[] Mayusculas;
+        private string[] Minusculas;
+        private string[] tempMy;
+        private string[] tempMn;
+
         static void Main(string[] args)
         {
-            var data = new Program(); //Tambien es valido--> Program data = new Program();
-            data.metodoPrivado();
-            data.metodoPublico();
-            data.metodoPrivado1();
-            Console.WriteLine(data.metodoPrivado3());
-            Console.WriteLine(data.metodoPrivado4());
-            
+            var data = new Program();
             Console.ReadLine();
             //Console.ReadKey();
         }
 
-        private void metodoPrivado()
+        private String Mayuscula()
         {
-            Console.WriteLine("Metodo privado con instancia");
+            for (int i = 0; i < n; i++)
+            {
+                //IsUpper indica si un caracter Unicode esta categorizado com una letra mayuscula
+                if (Char.IsUpper(cadena[i]))
+                {
+                    tempMy[i] = Convert.ToString(cadena[i]);
+                }
+            }
+            //Recooremos el arreglo temporal anterior
+            for (int i = 0; i < tempMy.Length; i++)
+            {
+                if (tempMy[i] != null)
+                {
+                    Mayusculas[i] = tempMy[i];
+                    verMayusculas = $"{verMayusculas},{Mayusculas[i]}";
+                }
+            }
+            return verMayusculas;
         }
 
-        private string metodoPrivado1()
-        {
-            return "Victor Carmona";
-        }
 
-        private string metodoPrivado3()
-        {
-            return $"Victor Carmona {25}";
-        }
-
-        private int metodoPrivado4()
-        {
-            //Convierte un dato de tipo string en un dato de tipo entero
-            return Convert.ToInt16("23");
-        }
-
-        public void metodoPublico()
-        {
-            Console.WriteLine("Victor");
-        }
     }
 }
