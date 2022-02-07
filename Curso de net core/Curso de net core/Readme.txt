@@ -1,8 +1,5 @@
-﻿## 34 - Método constructor de la clase
+﻿## 35 - Leer Mayúsculas y Minúculas
 
-Hemos creado un constructor para la clase Program pasandole un parametro que sera un texto o string
-pasado por teclado.
-Tenemos que tener en cuenta que aunque pasemos un numero por teclado el programa lo recibira como un string.
-
-
+Hemos ejecutado los dos metodo de mayusculas y minusculas y he creado uno para agrupar a los dos
+y asi intentar optimizar un poco mas el código.
 
