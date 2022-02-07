@@ -1,5 +1,3 @@
-﻿## 35 - Leer Mayúsculas y Minúculas
+﻿## 36 - Sobrecarga de metodos constructores
 
-Hemos ejecutado los dos metodo de mayusculas y minusculas y he creado uno para agrupar a los dos
-y asi intentar optimizar un poco mas el código.
-
+Hemos construido varios metodos constructores para una misma clase
