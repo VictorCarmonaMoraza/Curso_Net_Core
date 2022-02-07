@@ -1,32 +1,8 @@
-﻿## 33 - Variables globales y metrodo que retorna datos de tipo string
+﻿## 34 - Método constructor de la clase
 
-Todas las variables creadas dentro de un metodo son variables locales.
-
-class Program
-    {
-        //Variables Globales
-        private String names;
-
-        static void Main(string[] args)
-        {
-            var data = new Program();
-            var name = data.metodoPrivado();
-            //Variable local
-            String namesLocal;
-            Console.WriteLine(name);
-            Console.ReadLine();
-            //Console.ReadKey();
-        }
-
-        private int metodoPrivado()
-        {
-            //Variable Global
-            names = "";
-            //Variable local da error
-            namesLocal = "";
-            return Convert.ToInt16("yui");
-        }
-    }
+Hemos creado un constructor para la clase Program pasandole un parametro que sera un texto o string
+pasado por teclado.
+Tenemos que tener en cuenta que aunque pasemos un numero por teclado el programa lo recibira como un string.
 
 
 

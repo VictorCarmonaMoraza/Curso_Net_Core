@@ -15,12 +15,17 @@ namespace Curso_de_net_core
         private string[] tempMy;
         private string[] tempMn;
 
-        static void Main(string[] args)
+        //Constructor
+        public Program(String cadena)
         {
-            var data = new Program();
-            Console.ReadLine();
-            //Console.ReadKey();
+            this.cadena = cadena;
+            n = cadena.Length;
+            Mayusculas = new string[n];
+            Minusculas = new string[n];
+            tempMy = new string[n];
+            tempMn = new string[n];
         }
+
 
         private String Mayuscula()
         {
@@ -42,6 +47,42 @@ namespace Curso_de_net_core
                 }
             }
             return verMayusculas;
+        }
+
+        public string minusculas()
+        {
+            for (int i = 0; i < n; i++)
+            {
+                //IsLower indica si un caracter unicode esta categorizado como una letra minuscula
+                if (Char.IsLower(cadena[i]))
+                {
+                    //Arreglo que almacenara los caracteres en minuscula
+                    tempMn[i] = Convert.ToString(cadena[i]);
+                }
+            }
+            //Recorremos el arreglo tempMn
+            for (int i = 0; i < tempMn.Length; i++)
+            {
+                //Comporbamos que el arreglo no esta vacio
+                if (tempMn[i] != null)
+                {
+                    //Agregamos el elemento al arreglo de minusculas
+                    Minusculas[i] = tempMn[i];
+                    //
+                    verMinusculas = $"{verMinusculas},{Minusculas[i]}";
+                }
+            }
+            return verMinusculas;
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Escribe un texto");
+            //Leeemos por teclado 
+            var cadena = Console.ReadLine();
+            var data = new Program(cadena);
+            Console.ReadLine();
+            //Console.ReadKey();
         }
 
 
