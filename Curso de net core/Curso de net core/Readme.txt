@@ -1,3 +1,5 @@
-﻿## 42 -  Datos duplicados en un array
+﻿## 43 - Variables estáticas
 
-Interesante app para comprobar los numeros duplicados en un arreglo
+Con las variables static mantendremos el valor de iniciacion que le asignamos por primera vez, sin 
+importar cuantas veces lo instanciemos.
+En memoria solo se utiliza como un objeto.
