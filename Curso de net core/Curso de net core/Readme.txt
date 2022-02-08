@@ -1,3 +1,3 @@
-﻿## 36 - Sobrecarga de metodos constructores
+﻿## 37 - Como pasar un arreglo de tipo objeto como parámetro
 
-Hemos construido varios metodos constructores para una misma clase
+Pasamos un arreglo de objeto y extraemos sus valores uno a uno o mediante foreach o for
