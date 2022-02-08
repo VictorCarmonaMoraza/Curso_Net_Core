@@ -6,12 +6,22 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            Object[] parametros = { "Victor", 25, true };
-            new Program().metodo(parametros);
+            //Object[] parametros = { "Victor", 25, true };
+            //new Program().metodo("Victor", 25, true, 'A');
+
+            int edad = 30;
+            new Program().metodo2(edad);
             Console.ReadLine();
         }
 
-        private void metodo(object[] parametros)
+        private void metodo2(in int valor)
+        {
+            //valor = 50;
+            Console.WriteLine(valor);
+        }
+
+        //al poner params no nos dara error porque los captura
+        private void metodo(params object[] parametros)
         {
             //Casteamos los que nos viene en la posiscion cero del arreglo
             string nombre = (string)parametros[0];

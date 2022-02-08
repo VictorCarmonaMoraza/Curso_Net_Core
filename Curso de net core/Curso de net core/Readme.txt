@@ -1,3 +1,5 @@
-﻿## 37 - Como pasar un arreglo de tipo objeto como parámetro
+﻿## 38 - Parámetros de métodos palabras claves params, in
 
-Pasamos un arreglo de objeto y extraemos sus valores uno a uno o mediante foreach o for
+Con el parametro (params) podemos pasar parametros al arreglo sin tener que crear una instancia del arreglo.
+
+Con el parametro (in) hacemos que no podamos modificar el parametro pasado a la funcion
