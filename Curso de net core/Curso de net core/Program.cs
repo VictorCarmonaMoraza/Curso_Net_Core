@@ -7,6 +7,8 @@
             var data = new Conversor();
             Conversor.velocidad = 3.0;
             var data1 = new Conversor();
+            Conversor.Conversor1();
+            Conversor.Conversor2();
         }
     }
 }
