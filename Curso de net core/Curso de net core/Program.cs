@@ -10,38 +10,25 @@ namespace Curso_de_net_core
             //new Program().metodo("Victor", 25, true, 'A');
 
             int edad = 30;
-            new Program().metodo2(edad);
+            int data = 67;
+            //reflejara el valor de data fuera del metodo, aqui vale 70
+            new Program().metodo(ref data);
+            //Con esto no tenemos que inicializar la variable data
+            new Program().metodo2(out data);
+            Console.WriteLine(data);
             Console.ReadLine();
         }
 
-        private void metodo2(in int valor)
+        private void metodo(ref int valor)
         {
-            //valor = 50;
-            Console.WriteLine(valor);
+            valor = 50 + 20;
+            //Console.WriteLine(valor);
         }
 
-        //al poner params no nos dara error porque los captura
-        private void metodo(params object[] parametros)
+        private void metodo2(out int valor)
         {
-            //Casteamos los que nos viene en la posiscion cero del arreglo
-            string nombre = (string)parametros[0];
-            int edad = (int)parametros[1];
-            bool valor = (bool)parametros[2];
-
-            //Recorrido con un foreach
-            foreach (var item in parametros)
-            {
-                Console.WriteLine(item);
-            }
-        }
-
-        private void RecorrerArreglo(object[] parametros)
-        {
-            //Recorremos el arreglo
-            for (int i = 0; i < parametros.Length; i++)
-            {
-                Console.WriteLine(i + "---->" + parametros[i]);
-            }
+            valor = 50 + 20;
+            //Console.WriteLine(valor);
         }
     }
 }
