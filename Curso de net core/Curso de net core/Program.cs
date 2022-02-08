@@ -6,29 +6,37 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            //Object[] parametros = { "Victor", 25, true };
-            //new Program().metodo("Victor", 25, true, 'A');
-
-            int edad = 30;
-            int data = 67;
-            //reflejara el valor de data fuera del metodo, aqui vale 70
-            new Program().metodo(ref data);
-            //Con esto no tenemos que inicializar la variable data
-            new Program().metodo2(out data);
+            int data;
+            new Program().metodo(out data);
+            
             Console.WriteLine(data);
             Console.ReadLine();
         }
 
-        private void metodo(ref int valor)
+        private void metodo(out int valor)
         {
             valor = 50 + 20;
-            //Console.WriteLine(valor);
-        }
+            var valor2 = funcion3();
+            Console.WriteLine(valor2);
+            funcion(valor);
+            funcion2(valor);
+            
 
-        private void metodo2(out int valor)
-        {
-            valor = 50 + 20;
-            //Console.WriteLine(valor);
+            int funcion(int valor)
+            {
+                Console.WriteLine($"Hola soy una funcion {valor}");
+                return valor;
+            }
+
+            void funcion2(int valor)
+            {
+                Console.WriteLine($"Hola soy una funcion void {valor}");
+            }
+
+            int funcion3()
+            {
+                return 50 + 20;
+            }
         }
     }
 }
