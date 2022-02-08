@@ -1,3 +1,3 @@
-﻿## 41 - Funciones static
+﻿## 42 -  Datos duplicados en un array
 
-Si tenemos un metodo static con una linea de codigo podemos hacer la funcion flecha
+Interesante app para comprobar los numeros duplicados en un arreglo

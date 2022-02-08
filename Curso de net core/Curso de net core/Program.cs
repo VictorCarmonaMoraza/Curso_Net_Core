@@ -6,21 +6,47 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            //int data;
-            string nombre;
-            //new Program().metodo(out data);
-            mensaje();
-            Console.WriteLine(nombre);
-            void mensaje() => nombre = "Victor Carmona";
-            Console.ReadLine();
-        }
+            //Inicializamos un array 
+            int[] array = { 1, 2, 2, 3, 6, 4, 4, 4, 9, 5, 6, 5, 9, 2 };
 
-        private void metodo(out int valor)
-        {
-            valor = funcion();
+            int[] list = new int[array.Length];
 
-            //Si tenemos un metodo static con una linea de codigo podemos hacer la funcion flecha
-            static int funcion()=> 50 + 20;
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                int count = 0;
+                for ( int j = 0; j < array.Length; j++)
+                {
+                    //Coparamos si tenemos datos duplicados
+                    if (array[i] == array[j])
+                    {
+                        count++;
+                        if (numero(array[i]))
+                        {
+                            list[i] = array[i];
+                        }
+                    }
+                }
+                if (list[i] != 0)
+                {
+                    Console.WriteLine(list[i] + " se repite: " + count);
+                }
+            }
+            
+
+            bool numero(int num)
+            {
+                for (int i = 0; i < list.Length; i++)
+                {
+                    if (list[i] == num)
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+
         }
     }
 }
