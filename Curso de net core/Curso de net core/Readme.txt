@@ -1,34 +1,29 @@
-﻿## 44 - Métodos estáticos
+﻿## 45 y 46 - Clase estática y Conversor de velocidades
 
-En los metodos estaticos debemos utilizar variables estaticas o definirlas a nivel de metodos.
+Las clases esticas deben de tener sus metodos y variables estaticos.
 
-ej
+A una clase estatica no se le puede crear un metodo constructor a no ser que sea estatico.
 
-        public static double velocidad;
-
-        public static void Conversor1()
+         //Metodo constructor static
+        static Conversor()
         {
-            velocidad += 20;
-            //esto es valido, porque es definida dentro del metodo
-            int valor = 20;
+
         }
 
-ej No valido
+Los constructores estaticos no pueden tener los modificadores de acceso public ni private.
 
-         public static double velocidad;
-         int valor = 5;
+-Ejemplos no valido con private:
 
-        public static void Conversor1()
+        private static Conversor()
         {
-            velocidad += 20;
-            //esto no es valido
-            valor = 20;
+
         }
-        
 
-Para llamar a un metodo estatico dentro de una clase es con el nombre de la clase
-y el nombre del metodo.
+-Ejemplos no valido con public:
 
-ej:
+        public static Conversor()
+        {
 
-    Conversor.metodo();
+        }
+
+odas las variables estaticas debeos incializarlas para que no mantengan el valor.
