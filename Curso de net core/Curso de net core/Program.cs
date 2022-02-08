@@ -6,37 +6,21 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            int data;
-            new Program().metodo(out data);
-            
-            Console.WriteLine(data);
+            //int data;
+            string nombre;
+            //new Program().metodo(out data);
+            mensaje();
+            Console.WriteLine(nombre);
+            void mensaje() => nombre = "Victor Carmona";
             Console.ReadLine();
         }
 
         private void metodo(out int valor)
         {
-            valor = 50 + 20;
-            var valor2 = funcion3();
-            Console.WriteLine(valor2);
-            funcion(valor);
-            funcion2(valor);
-            
+            valor = funcion();
 
-            int funcion(int valor)
-            {
-                Console.WriteLine($"Hola soy una funcion {valor}");
-                return valor;
-            }
-
-            void funcion2(int valor)
-            {
-                Console.WriteLine($"Hola soy una funcion void {valor}");
-            }
-
-            int funcion3()
-            {
-                return 50 + 20;
-            }
+            //Si tenemos un metodo static con una linea de codigo podemos hacer la funcion flecha
+            static int funcion()=> 50 + 20;
         }
     }
 }
