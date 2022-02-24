@@ -1,4 +1,16 @@
-﻿## 50 - Propiedades #1
+﻿## 51 y 52 - Propiedades #2, Búsqueda de datos usando colecciones de objetos
 
-Hemos creado una clase nueva con los getter y setter. Un setter no se puede crear de 
-manera independiente sin inicializalo
+Otra forma de retornar los getter y los setter en forma de flecha
+
+public class Estudiante
+    {
+        private String nombre;
+
+        //Getter and setter y inicializacion
+        public String Nombre
+        {
+            get => nombre;
+            set => nombre = value;
+        }
+    }
+
