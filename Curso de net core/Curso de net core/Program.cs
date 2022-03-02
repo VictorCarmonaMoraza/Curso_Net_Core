@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Curso_de_net_core.model;
+using System;
+using System.Collections.Generic;
 
 namespace Curso_de_net_core
 {
@@ -6,9 +8,14 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            var data = new Estudiante();
-            var nombre = data.Nombre="Ana";
-            var apellido = data.Apellido = "Benitez";
+            List<Object> lista = new List<Object>();
+            //List<String> lista2 = new List<String>();
+            lista.Add("Victor");
+            lista.Add(32);
+            Console.WriteLine(lista[0]);
+            lista.Remove(32);
+            Console.WriteLine(lista.Count);
+            Console.ReadKey();
         }
     }
 }

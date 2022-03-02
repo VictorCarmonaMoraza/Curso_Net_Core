@@ -1,16 +1,5 @@
-﻿## 51 y 52 - Propiedades #2, Búsqueda de datos usando colecciones de objetos
+﻿## 53 - Clase génerica List #1
 
-Otra forma de retornar los getter y los setter en forma de flecha
-
-public class Estudiante
-    {
-        private String nombre;
-
-        //Getter and setter y inicializacion
-        public String Nombre
-        {
-            get => nombre;
-            set => nombre = value;
-        }
-    }
+Hemos visto como declarar una lista de varios tipos, la forma de agregar elementos a la lista, la forma de obtener el numero de elementos
+de una lista, la forma de elminar un elemnto de la lista.
 
