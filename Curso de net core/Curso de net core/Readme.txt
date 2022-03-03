@@ -1,4 +1,4 @@
-﻿## 58 - Creando el nodo para agregar los nodos en la lista #2
+﻿## 59 - Agregando datos a los nodos de la aplicación
 
 
 

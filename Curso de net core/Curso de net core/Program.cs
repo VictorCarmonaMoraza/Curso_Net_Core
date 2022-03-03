@@ -7,10 +7,13 @@ namespace Curso_de_net_core
     {
         static void Main(string[] args)
         {
-            List<Object> lista = new List<Object>();
-            //Para crear listas enlazadas
-            LinkedList<String> nodos = new LinkedList<string>();
-
+            var list = new ListaNodo();
+            list.ListaVacia();
+            list.addNodo(1);
+            list.addNodo(3);
+            list.addNodo(2);
+            list.addNodo(4);
+            list.ListaVacia();
             
             Console.ReadKey();
         }

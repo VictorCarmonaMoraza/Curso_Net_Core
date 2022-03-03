@@ -35,11 +35,11 @@ namespace Curso_de_net_core
             else
             {
                 valor1 = primero;
-                while (valor1!=null)
+                while (valor1 != null)
                 {
                     valor2 = valor1.siguiente;
                     //Condicion que verifica si el numero entrnte debe ir primero
-                    if (nuevo.dato<=valor1.dato)
+                    if (nuevo.dato <= valor1.dato)
                     {
                         nuevo.siguiente = primero;
                         primero = nuevo;
@@ -48,7 +48,7 @@ namespace Curso_de_net_core
                     else
                     {
                         //Condicion que verifica si el numero entrante debe ir al ultimo
-                        if(nuevo.dato>valor1.dato && valor2 == null)
+                        if (nuevo.dato > valor1.dato && valor2 == null)
                         {
                             valor1.siguiente = nuevo;
                             nuevo.siguiente = null;
@@ -57,7 +57,7 @@ namespace Curso_de_net_core
                         else
                         {
                             //Condicion que verifica si el numero entrante debe ir en medio de otro nodo
-                            if(valor1.dato<nuevo.dato && valor2.dato >= nuevo.dato)
+                            if (valor1.dato < nuevo.dato && valor2.dato >= nuevo.dato)
                             {
                                 valor1.siguiente = nuevo;
                                 nuevo.siguiente = valor2;
@@ -72,5 +72,19 @@ namespace Curso_de_net_core
                 }
             }
         }
+
+        //Verificar que nuestra lista no esta vacia
+        public void ListaVacia()
+        {
+            if (primero == null)
+            {
+                Console.WriteLine("la lista esta vacia");
+            }
+            else
+            {
+                Console.WriteLine("la lista contiene datos");
+            }
+        }
+
     }
 }
