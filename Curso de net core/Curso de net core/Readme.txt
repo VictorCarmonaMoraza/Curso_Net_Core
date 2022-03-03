@@ -1,4 +1,4 @@
-﻿## 56 - Clase génerica List #4
+﻿## 57 - Creando el nodo para agregar los nodos en la lista #1
 
 
 
