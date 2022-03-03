@@ -1,4 +1,4 @@
-﻿## 54 - Clase génerica List #2
+﻿## 55 - Clase génerica List #3
 
-Hemos puesto tres formas de iterar una coleccion
+
 
