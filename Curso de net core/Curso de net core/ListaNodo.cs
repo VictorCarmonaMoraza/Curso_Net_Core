@@ -73,7 +73,9 @@ namespace Curso_de_net_core
             }
         }
 
-        //Verificar que nuestra lista no esta vacia
+        /// <summary>
+        /// Comprobaqcion de si la lista contiene datos
+        /// </summary>
         public void ListaVacia()
         {
             if (primero == null)
@@ -86,5 +88,17 @@ namespace Curso_de_net_core
             }
         }
 
+        /// <summary>
+        /// Lista todos los valores de nodos
+        /// </summary>
+        public void Listar()
+        {
+            Nodo actual = primero;
+            while (actual != null)
+            {
+                Console.Write($"[{actual.dato}]->");
+                actual = actual.siguiente;
+            }
+        }
     }
 }

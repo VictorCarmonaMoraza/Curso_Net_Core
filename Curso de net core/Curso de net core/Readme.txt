@@ -1,4 +1,4 @@
-﻿## 59 - Agregando datos a los nodos de la aplicación
+﻿## 60 -Creando el procedimiento para en listar los nodos de la coleccion
 
 
 

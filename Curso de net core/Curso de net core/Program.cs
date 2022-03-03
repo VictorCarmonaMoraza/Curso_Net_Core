@@ -13,7 +13,7 @@ namespace Curso_de_net_core
             list.addNodo(3);
             list.addNodo(2);
             list.addNodo(4);
-            list.ListaVacia();
+            list.Listar();
             
             Console.ReadKey();
         }
