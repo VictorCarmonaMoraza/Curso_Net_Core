@@ -1,5 +1,4 @@
-﻿## 53 - Clase génerica List #1
+﻿## 54 - Clase génerica List #2
 
-Hemos visto como declarar una lista de varios tipos, la forma de agregar elementos a la lista, la forma de obtener el numero de elementos
-de una lista, la forma de elminar un elemnto de la lista.
+Hemos puesto tres formas de iterar una coleccion
 
