@@ -14,7 +14,12 @@ namespace Curso_de_net_core
             list.addNodo(2);
             list.addNodo(4);
             list.Listar();
-            
+            list.DeletePrimero();
+            Console.WriteLine();
+            list.Listar();
+            Console.WriteLine();
+            list.DeleteUltimo();
+            list.Listar();
             Console.ReadKey();
         }
     }

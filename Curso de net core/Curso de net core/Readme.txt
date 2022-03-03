@@ -1,4 +1,4 @@
-﻿## 60 -Creando el procedimiento para en listar los nodos de la coleccion
+﻿## 61 -Creando el procedimiento para eliminar el primero y ultimo nodo de la lista
 
 
 

@@ -100,5 +100,38 @@ namespace Curso_de_net_core
                 actual = actual.siguiente;
             }
         }
+
+        /// <summary>
+        /// Elimina el primer nodo de la coleccion
+        /// </summary>
+        public void DeletePrimero()
+        {
+            //Sustituye el primeor por el segundo y ya no se muestra 
+            primero = primero.siguiente;
+        }
+
+        public void DeleteUltimo()
+        {
+            Nodo actual = primero;
+
+            while (actual.siguiente != null)
+            {
+                Console.Write($"[{actual.dato}]->");
+                actual = actual.siguiente;
+            }
+        }
+
+        public void DeleteUltimoV2()
+        {
+            Nodo anterior = primero;
+            Nodo actual = primero;
+
+            while (actual.siguiente != null)
+            {
+                anterior = actual;
+                actual = actual.siguiente;
+            }
+            anterior.siguiente = null;
+        }
     }
 }
