@@ -5,7 +5,6 @@ C:\Users\Victo\Desktop\c# .Net desde cero hasta lo mas avanzado full stack\Curso
 C:\Users\Victo\Desktop\c# .Net desde cero hasta lo mas avanzado full stack\Curso de net core\Curso de net core\bin\Debug\net5.0\Curso de net core.dll
 C:\Users\Victo\Desktop\c# .Net desde cero hasta lo mas avanzado full stack\Curso de net core\Curso de net core\bin\Debug\net5.0\ref\Curso de net core.dll
 C:\Users\Victo\Desktop\c# .Net desde cero hasta lo mas avanzado full stack\Curso de net core\Curso de net core\bin\Debug\net5.0\Curso de net core.pdb
-C:\Users\Victo\Desktop\c# .Net desde cero hasta lo mas avanzado full stack\Curso de net core\Curso de net core\obj\Debug\net5.0\Curso de net core.csproj.AssemblyReference.cache
 C:\Users\Victo\Desktop\c# .Net desde cero hasta lo mas avanzado full stack\Curso de net core\Curso de net core\obj\Debug\net5.0\Curso de net core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Victo\Desktop\c# .Net desde cero hasta lo mas avanzado full stack\Curso de net core\Curso de net core\obj\Debug\net5.0\Curso de net core.AssemblyInfoInputs.cache
 C:\Users\Victo\Desktop\c# .Net desde cero hasta lo mas avanzado full stack\Curso de net core\Curso de net core\obj\Debug\net5.0\Curso de net core.AssemblyInfo.cs
