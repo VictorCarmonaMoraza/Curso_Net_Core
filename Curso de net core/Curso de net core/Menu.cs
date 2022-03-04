@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace Curso_de_net_core
 {
-    public class Nodo
+    public class Menu
     {
-        public int dato;
-        public Nodo siguiente;
-
-        public Nodo(int dato)
+        public void getProducto()
         {
-            this.dato = dato;
-            this.siguiente = null;
+            Console.WriteLine("Curso de C# desde cero");
         }
     }
 }
