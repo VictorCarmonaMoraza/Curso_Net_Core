@@ -8,9 +8,16 @@ namespace Curso_de_net_core
 {
     public class Menu
     {
-        public void getProducto()
+        private string s;
+
+        public Menu(string s)
         {
-            Console.WriteLine("Curso de C# desde cero");
+            this.s = s;
+        }
+
+        public virtual void getProducto()
+        {
+            Console.WriteLine(s+" Padre");
         }
     }
 }

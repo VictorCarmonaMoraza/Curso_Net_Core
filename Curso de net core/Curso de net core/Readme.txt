@@ -1,4 +1,4 @@
-﻿## 65 - Herencia de clases
+﻿## 66 - Herencia de clases y la palabra protected, base,override, virtual
 
 
 
