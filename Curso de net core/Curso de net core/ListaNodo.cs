@@ -133,5 +133,22 @@ namespace Curso_de_net_core
             }
             anterior.siguiente = null;
         }
+
+        public void DeletePosicionNodo(int p)
+        {
+            Nodo anterior = primero;
+            Nodo actual = primero;
+            int dato = 0;
+            if (p > 0)
+            {
+                while (dato!=p && actual.siguiente !=null)
+                {
+                    anterior = actual;
+                    actual = actual.siguiente;
+                    dato++;
+                }
+                anterior.siguiente = actual.siguiente;
+            }
+        }
     }
 }

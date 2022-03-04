@@ -1,4 +1,4 @@
-﻿## 61 -Creando el procedimiento para eliminar el primero y ultimo nodo de la lista
+﻿## 62 - Desarrollando procedimiento para eliminar un nodo de acuerdo a una posicion
 
 
 
