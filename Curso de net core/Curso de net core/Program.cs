@@ -20,8 +20,9 @@ namespace Curso_de_net_core
             //Console.WriteLine();
             ////list.DeleteUltimo();
             //list.Listar();
-            list.DeletePosicionNodo(3);
-            list.Listar();
+            //list.DeletePosicionNodo(3);
+            //list.Listar();
+            list.BuscarNodo(3);
             Console.ReadKey();
         }
     }

@@ -150,5 +150,35 @@ namespace Curso_de_net_core
                 anterior.siguiente = actual.siguiente;
             }
         }
+
+        public Nodo BuscarNodo(int n)
+        {
+            Nodo p = primero;
+
+            if (p == null)
+            {
+                Console.WriteLine("La lista no tiene datos");
+            }
+            else
+            {
+                while(p.siguiente!=null || p.siguiente == null)
+                {
+                    if (p.dato == n)
+                    {
+                        return p;
+                    }
+                    else
+                    {
+                        if (p.siguiente == null)
+                        {
+                            return null;
+                        }
+                    }
+                    p = p.siguiente;
+                }
+            }
+            return null;
+        }
+       
     }
 }
