@@ -71,6 +71,8 @@ namespace Curso_de_net_core
                     }
                 }
             }
+            //Para saber la cantidad de nodos
+            size++;
         }
 
         /// <summary>
@@ -178,6 +180,21 @@ namespace Curso_de_net_core
                 }
             }
             return null;
+        }
+
+        public void Sustituir(int orig, int nuevoDato)
+        {
+            Nodo pos = BuscarNodo(orig);
+            if(pos !=null || pos == null)
+            {
+                pos.dato = nuevoDato;
+            }
+        }
+
+        //Devuleve la cantidad de nodos
+        public int Size()
+        {
+            return size;
         }
        
     }

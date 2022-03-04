@@ -1,4 +1,4 @@
-﻿## 63 - Procedimiento para buscar un dato en la lista de nodos
+﻿## 64 - Procedimiento para sustituir el dato de un nodo en la lista
 
 
 

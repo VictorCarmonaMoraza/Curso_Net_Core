@@ -22,7 +22,11 @@ namespace Curso_de_net_core
             //list.Listar();
             //list.DeletePosicionNodo(3);
             //list.Listar();
-            list.BuscarNodo(3);
+            //list.BuscarNodo(3);
+            Console.WriteLine(list.Size());
+            list.Sustituir(3, 6);
+            list.Listar();
+            
             Console.ReadKey();
         }
     }
