@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Curso_de_net_core
 {
-    public class Menu
+    public class Menu : Principal
     {
         private string s;
 
@@ -15,9 +11,14 @@ namespace Curso_de_net_core
             this.s = s;
         }
 
-        public virtual void getProducto()
+        public override void getProducto()
         {
-            Console.WriteLine(s+" Padre");
+            Console.WriteLine(s);
         }
+
+        //protected virtual void getProducto()
+        //{
+        //    Console.WriteLine(s + " Padre");
+        //}
     }
 }

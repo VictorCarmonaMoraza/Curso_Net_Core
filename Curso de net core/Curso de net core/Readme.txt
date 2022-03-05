@@ -1,4 +1,4 @@
-﻿## 66 - Herencia de clases y la palabra protected, base,override, virtual
+﻿## 67 - Clases y metodos abstract
 
 
 

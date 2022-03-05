@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Curso_de_net_core
 {
@@ -19,10 +18,10 @@ namespace Curso_de_net_core
             Console.ReadKey();
         }
 
-        //Sobreescribimos el metodo del padre
-        public override void getProducto()
-        {
-            Console.WriteLine(variable+" hija");
-        }
+        ////Sobreescribimos el metodo del padre
+        //public override void getProducto()
+        //{
+        //    Console.WriteLine(variable+" hija");
+        //}
     }
 }
