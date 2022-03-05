@@ -2,19 +2,25 @@
 
 namespace Curso_de_net_core
 {
-    public class Menu : Principal
+    public class Menu : Principal, IProductos
     {
         private string s;
 
         public Menu(string s)
         {
             this.s = s;
+            base.getProducto();
         }
 
-        public override void getProducto()
+        public void addProductos()
         {
-            Console.WriteLine(s);
+            throw new NotImplementedException();
         }
+
+        //public override void getProducto()
+        //{
+        //    Console.WriteLine(s);
+        //}
 
         //protected virtual void getProducto()
         //{

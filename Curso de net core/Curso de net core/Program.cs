@@ -14,7 +14,8 @@ namespace Curso_de_net_core
 
         static void Main(string[] args)
         {
-            new Program("Real betis").getProducto();
+            //new Program("Real betis").getProducto();
+            new Program("Real betis");
             Console.ReadKey();
         }
 

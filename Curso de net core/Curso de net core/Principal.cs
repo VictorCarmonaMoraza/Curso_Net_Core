@@ -1,7 +1,12 @@
-﻿namespace Curso_de_net_core
+﻿using System;
+
+namespace Curso_de_net_core
 {
     public abstract class Principal
     {
-        public abstract void getProducto();
+        public void getProducto()
+        {
+            Console.WriteLine("Hola soy Victor");
+        }
     }
 }
