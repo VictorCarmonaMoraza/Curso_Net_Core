@@ -2,20 +2,14 @@
 
 namespace Curso_de_net_core
 {
-    class Program : Menu
+    class Program
     {
-
-        private string variable;
-
-        public Program(string s):base(s)
-        {
-            variable = s;
-        }
 
         static void Main(string[] args)
         {
-            //new Program("Real betis").getProducto();
-            new Program("Real betis");
+            //Esto es polimorfismo
+            Almacen a1 = new Golosinas();
+
             Console.ReadKey();
         }
 
