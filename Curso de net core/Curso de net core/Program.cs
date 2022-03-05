@@ -2,15 +2,20 @@
 
 namespace Curso_de_net_core
 {
-    class Program
+    class Program : Menu
     {
 
         static void Main(string[] args)
         {
-            //Esto es polimorfismo
-            Almacen a1 = new Golosinas();
-
+            ////Esto es polimorfismo
+            //Almacen a1 = new Golosinas();
+            new Program().start();
             Console.ReadKey();
+        }
+
+        private void start()
+        {
+            golosinas();
         }
 
         ////Sobreescribimos el metodo del padre

@@ -4,14 +4,21 @@ namespace Curso_de_net_core
 {
     public class Golosinas : Almacen
     {
-        public override void addProducto(Producto producto)
+        private List<Producto> _Golosinas;
+
+        public Golosinas()
         {
-            throw new System.NotImplementedException();
+            _Golosinas = new List<Producto>();
         }
 
-        public override List<Producto> getProducto(string valor)
+        public override void addProducto(Producto producto)
         {
-            throw new System.NotImplementedException();
+            _Golosinas.Add(producto);
+        }
+
+        public override List<Producto> getProducto()
+        {
+            return _Golosinas;
         }
     }
 }

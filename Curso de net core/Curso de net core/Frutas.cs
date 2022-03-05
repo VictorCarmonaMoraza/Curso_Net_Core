@@ -13,7 +13,7 @@ namespace Curso_de_net_core
             throw new NotImplementedException();
         }
 
-        public override List<Producto> getProducto(string valor)
+        public override List<Producto> getProducto()
         {
             throw new NotImplementedException();
         }
