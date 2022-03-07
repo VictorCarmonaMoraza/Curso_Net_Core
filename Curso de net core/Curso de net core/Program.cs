@@ -9,14 +9,15 @@ namespace Curso_de_net_core
         {
             ////Esto es polimorfismo
             //Almacen a1 = new Golosinas();
-            new Program().start();
+            //new Program().start();
+            new Program().golosinas();
             Console.ReadKey();
         }
 
-        private void start()
-        {
-            golosinas();
-        }
+        //private void start()
+        //{
+        //    golosinas();
+        //}
 
         ////Sobreescribimos el metodo del padre
         //public override void getProducto()

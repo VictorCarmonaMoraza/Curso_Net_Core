@@ -25,7 +25,57 @@ namespace Curso_de_net_core
                     {
                         Console.WriteLine("¿Cuantas golosinas va a agregar?");
                         int cantidad = Convert.ToInt32(Console.ReadLine());
+                        for (int i = 0; i < cantidad; i++)
+                        {
+                            Console.WriteLine("Nueva Golosina");
+                            Console.WriteLine("Ingrese la id");
+                            var id = Console.ReadLine();
+                            Console.WriteLine("Ingrese el nombre");
+                            var nombre = Console.ReadLine();
+                            Console.WriteLine("Ingrese el precio");
+                            var precio = Convert.ToDouble(Console.ReadLine());
+                            g.addProducto(new Producto {
+                                ID=id,
+                                Nombre = nombre,
+                                Precio = precio
+                            });
+                        }
+                        Console.WriteLine("Desea ir al inicio?");
+                        opcion = Console.ReadLine().ToUpper();
+                        if (opcion.Equals("S"))
+                        {
+                            valor = true;
+                        }
+                        else
+                        {
+                            valor = false;
+                        }
                     }
+                    else
+                    {
+                        Console.WriteLine("Desea ir al inicio s/n");
+                        opcion = Console.ReadLine().ToUpper();
+                        if (opcion.Equals("S"))
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Venta de golosinas y frutas");
+                        }
+                        else
+                        {
+                            valor = false;
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Lista de golosinas");
+                    foreach (var item in g.getProducto())
+                    {
+                        Console.WriteLine($"Codigo {item.ID} Golosina {item.Nombre} Precio {item.Precio}");
+                    }
+                    Console.WriteLine("Desea realizar ventas de golosinas s/n");
+                    opcion = Console.ReadLine().ToUpper();
+
                 }
 
             } while (valor);
